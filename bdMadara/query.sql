@@ -1,3 +1,4 @@
+//Pessoal, coloquem o banco de dados no Azure e tambem deem uma olhada no codigo, caso não entendam algo perguntem!
 create table sensorMadara(
 idCinema int primary key,
 nomeCinema varchar(40),

@@ -1,0 +1,51 @@
+/* Menu */
+
+#menu{
+    border-bottom: thin solid #a89ab9;
+    padding-left: 5px;
+    width: 100%;
+    float:left;
+
+}
+
+#lista_menu{
+    list-style: none;
+    padding: 0;
+    padding-top: 10px;
+    margin-bottom: 5px;
+}
+
+.item_menu{
+    float:right;
+    font-size: 18px;
+    margin-right: 20px;
+    margin-left: 9px;
+    color: #a89ab9;
+    text-align: center;
+    width: 135px;
+}
+
+
+/* CENTRO */
+
+#centroIndex{
+    
+    color: #a89ab9;
+    width: 100%;
+    margin-top: 10px;
+    min-height: 300px;
+    float: left;
+    margin-bottom: 100px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+
+#logo_index{
+    width: 560px;
+    height: 150px;
+    background-image:url(../imagens/madara.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    margin: 40px auto;
+}

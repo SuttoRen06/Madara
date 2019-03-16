@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styleindex.css">
+    <title>MADARA - Monitoramento ao vivo de ambiente remotamente automatizado</title>
+</head>
+<body>
+
+    <section id="principal" class="">
+        <header id="cabecalho" class="">
+            <nav id="menu" class="">
+                <ul id="lista_menu">
+                    <li class="item_menu"><a href="financeiro.html">Financeiro</a></li>
+                    <li class="item_menu"><a href="sobre.html">Quem somos</a></li>
+                    <li class="item_menu"><a href="projeto.html">Projeto</a></li>
+                    <li class="item_menu"><a href="contato.html">Contato</a></li>
+                    
+                </ul>
+            </nav>
+        </header>
+        <main id="centroIndex" class="">
+            <a href="index.html"><div id="logo_index"></div></a>
+            <div>
+                <form>
+                    <div style="width:50%; margin-left: 25%; margin-right: 20%; margin-top: 7%; height: 130px;">
+                        <div style="width:20%; float:left; margin-top:2px;">
+                                Funcionário:<br>
+                                Valor Produto:<br>
+                                Saldo Func:<br>
+                                Saldo Produto:
+                        </div>   
+                    <input type="number" id="ValorFuncionario" placeholder="Valor Funcionário" class="input"> <button type="button" class="button" onclick="DepositarFuncionario()"> Depositar Funcionário</button>
+                    <input type="number" id=ValorProduto placeholder="Valor mensal Produto" class="input"> <button type="button" class="button" onclick="DepositarProduto()"> Depositar Produto</button>   <br>
+
+                    <input type="number" id=SaldoFuncionario value="" placeholder="Saldo Funcionário" class="input" disabled="disabled"> <button type="button" class="button" onclick="CalcularAnualF()"> Calcular valor anual funcionario</button>
+                    <input type="number" id=SaldoProduto placeholder="Valor anual" class="input" disabled="disabled"> <button type="button" class="button" onclick="CalcularAnualP()"> Calcular valor anual produto</button>
+                    <button type="reset" class="button" style="width:100%;" onclick="limpar()">LIMPAR</button>
+                    <div id=SaldoAnualF style="color:blue" id="borda"></div>
+                    <div id=SaldoAnualP style="color:crimson"></div>
+                </div>
+                               
+
+            </form>
+                    
+            </div>
+        </main>
+    </section>
+
+
+
+</body>
+</html>
+<script>
+        function DepositarFuncionario()
+        {
+            var DepositarFunc = ValorFuncionario.value-0 + + SaldoFuncionario.value;
+            SaldoFuncionario.value = DepositarFunc;
+        }
+       function DepositarProduto() 
+       {
+       var DepositarProd = ValorProduto.value-0 + + SaldoProduto.value;
+       SaldoProduto.value = DepositarProd;
+       }
+       function CalcularAnualF() 
+       {
+       var anualfunc = SaldoFuncionario.value * 13   
+       SaldoAnualF.innerHTML = `Valor anual do funcionário é ${anualfunc}`;
+       }    
+       function CalcularAnualP()
+       {
+       var anualprod = SaldoProduto.value * 12   
+       SaldoAnualP.innerHTML = `Valor anual do produto é ${anualprod}`;
+
+       }
+       function limpar(){
+           SaldoAnualF.innerHTML="";
+           SaldoAnualP.innerHTML="";
+       }
+</script>

@@ -1,7 +1,7 @@
 /* Menu */
 
 #menu{
-    border-bottom: thin solid #a89ab9;
+    border-bottom: solid 5px #fff;
     padding-left: 5px;
     width: 100%;
     float:left;
@@ -15,37 +15,46 @@
     margin-bottom: 5px;
 }
 
+
 .item_menu{
     float:right;
     font-size: 18px;
     margin-right: 20px;
     margin-left: 9px;
-    color: #a89ab9;
+    color: #ffffff;
     text-align: center;
     width: 135px;
+    font-size: 22px;
+    font-weight: bold;
 }
 
+#conteudo{
+    background-color: #812d2d;
+
+}
 
 /* CENTRO */
 
 #centroIndex{
     
-    color: #a89ab9;
+    color: #ffffff;
     width: 100%;
     margin-top: 10px;
     min-height: 300px;
     float: left;
     margin-bottom: 100px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
 
 }
 
 
 #logo_index{
-    width: 560px;
+    width: 300px;
     height: 150px;
-    background-image:url(../imagens/madara.png);
+    background-image:url(../imagens/logofinal.png);
     background-repeat: no-repeat;
     background-position: top center;
     margin: 40px auto;
 }
+
